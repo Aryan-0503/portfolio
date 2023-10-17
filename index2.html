@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Georama:wght@600&family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Georama:wght@600&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <title>Aryan - portfolio</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 70px;
+            background-color: rgb(154, 77, 225);
+            font-weight: bold;
+        }
+        body{
+            background-color: black;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li{
+            list-style: none;
+            margin: 0 23px; 
+            font-weight: 700;
+        }
+        nav ul li a:hover{
+            color: black;
+            font-size: 1.01rem;
+        }
+        nav ul li a{
+            color: white;
+            text-decoration: none;
+        }
+        .left{
+            font-size: 2.5rem;
+            font-style: normal;
+            font-weight: 400;
+        }
+        .first{
+            display: flex;
+            justify-content: space-around;
+            margin: 80px 0;
+            flex-wrap: wrap;
+        }
+        .lefts{
+            width: 100%;
+            text-align: center;
+            font-size: 3rem;
+            font-weight: 300;
+            margin-bottom: 20px;
+        }
+        .rights{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .rights img{
+            width: 50px;
+            height: 50px;
+            margin: 10px;
+        }
+        .purple{
+            color: rgb(154, 77, 225);
+        }
+        #element{
+            color: rgb(154, 77, 225);
+        }
+        .second{
+            width: 80vw;
+            margin: auto;
+        }
+        .second h1{
+            margin-top: 5px;
+            font-weight: 500;
+        }
+        hr{
+            border: 0;
+            background-color:rgb(154, 77, 225);
+            height: 5px;
+        }
+        .second {
+            height: 80vh;
+        }
+        .gray{
+            color: gray;
+        }
+        .box{
+            background-color: white;
+            width: 80vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .second .vertical{
+            height: 90px;
+            width: 1px;
+            background-color: white;
+            margin: 20px 0;
+            margin-top: 108px;
+        }
+        .vertical .text{
+            margin-left: -4px;
+            margin-top: 88px;
+        }
+        footer{
+            background-color: rgb(154, 77, 225);
+        }
+        .footer{
+            display: flex;
+            padding: 23px 23px;
+            justify-content:space-evenly;
+        }
+        .footer1 {
+            padding: 5px 5px;
+        }
+        .footer2 ul {
+            justify-content: center;
+        }
+        .footer2 ul li a{
+            color: white;
+            text-decoration: none;
+        }
+        .footer2 ul li a:hover{
+            color: black;
+            font-size: 1.01rem;
+        }
+        .reserved{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+        }
+
+        
+        @media only screen and (max-width: 600px) {
+            .first {
+                flex-direction: column;
+                align-items: center;
+            }
+            .lefts {
+                text-align: center;
+            }
+            .rights {
+                flex-direction: column;
+                align-items: center;
+            }
+            .rights img {
+                width: 50px;
+                height: 50px;
+                margin: 10px 0;
+            }
+            .second {
+                width: 90vw;
+            }
+            .box {
+                flex-direction: column;
+                align-items: center;
+            }
+            .vertical {
+                margin: 20px 0;
+            }
+            .footer {
+                flex-direction: column;
+                align-items: center;
+            }
+            .reserved {
+                position: static;
+                margin-top: 20px;
+            }
+            nav {
+                flex-direction: column;
+                height: auto;
+            }
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav ul li {
+                margin: 10px 0;
+            }
+            .second{
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class ="left">Welcome </div>
+            <div class ="right">
+                <ul>
+                    <li><a href="http://127.0.0.1:3000/index2.html">Home</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="https://heylink.me/Aryansharma05">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="first">
+            <div class="lefts">
+              Hi, My name is <span class="purple">Aryan Sharma</span> 
+             <div>and I am a passionate</div> 
+             <span id="element"></span>
+            </div>
+            <div class="rights">
+                <div>
+                    <img src="html.png" alt="">
+                </div>
+                <div>
+                    <img src="java.png" alt="">
+                </div>
+                <div>
+                    <img src="figma.png" alt="">
+                </div>
+                <div>
+                    <img src="python.png" alt="">
+                </div>
+                <div>
+                    <img src="android.png" alt="">
+                </div>
+                <div>
+                    <img src="linux.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="second">
+            <hr>
+            <span class="gray">where i have been</span>
+            <h1>Education</h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <div class="text"><b>2019</b> Matriculation Bishop Westcott Boys' School</div>
+                </div>
+                <div class="vertical">
+                    <div class="text"><b>2021</b> Intermediate Oxford Public School</div>
+                </div>
+                <div class="vertical">
+                    <div class="text"><b>2026</b> B.Tech Electrical Engineering BIT Sindri</div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['App developer.', 'web developer.','programmer.','AI/ML enthusiast.','linux enthusiast.','Graphic designer.'],
+          typeSpeed: 30,
+        });
+    </script>
+    <footer>
+        <div class="footer">
+            <div class="footer1">
+                <h3>Aryan's Portfolio</h3>
+            </div>
+            <div class="footer2">
+                <ul>
+                    <li><a href="http://127.0.0.1:3000/index2.html">Home</a></li>
+                    <li><a href="#">Contacts</a></li>
+                    <li><a href="https://heylink.me/Aryansharma05">Projects</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="reserved">|All rights reserved|</div>   
+    </footer>
+</body>
+</html>
